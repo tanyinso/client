@@ -37,7 +37,7 @@ const UserLogin = () => {
           } catch (error) {
                console.log(error);
                setIsLogedin(true)
-               setMessage(error.response.data.message)
+               setMessage(response.data.message)
           }
 
      }
