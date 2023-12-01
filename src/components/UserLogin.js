@@ -35,7 +35,7 @@ const UserLogin = () => {
       location('/');
       window.location.reload();
     } catch (error) {
-      console.log(error);
+      console.error(error);
       setIsLogedin(true);
       setMessage(error.message);
     }

@@ -38,7 +38,7 @@ const TeacherLogin = () => {
                location('/dashboard');
                window.location.reload()
           } catch (error) {
-               console.log(error);
+               console.error(error);
                setIsLogedin(true)
                setMessage(error.response.data.message)
           }

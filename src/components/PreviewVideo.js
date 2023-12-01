@@ -20,7 +20,7 @@ const PreviewVideo = () => {
                  console.log(teacherId, teacherRes.data);
                  setTeacher(teacherRes.data);
                } catch (error) {
-                 console.log(error);
+                 console.error(error);
                }
              };
 

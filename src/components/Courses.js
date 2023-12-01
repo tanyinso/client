@@ -13,7 +13,7 @@ const Box = ({ course }) => {
                     const response = await axios.get(`http://localhost:8888/teacher/profile/${id}`)
                     setTeacher(response.data)
                } catch (error) {
-                    console.log(error)
+                    console.error(error)
                     return
                }
           }
@@ -54,7 +54,7 @@ const Courses = () => {
                     })
                     setOurCourses(response.data)
                } catch (error) {
-                    console.log(error)
+                    console.error(error)
                }
           }
           fetchCourses()

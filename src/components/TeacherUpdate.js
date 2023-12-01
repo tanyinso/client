@@ -23,7 +23,7 @@ const TeacherUpdate = ({token}) => {
                     setEmail(user.email)
                     setProfilePic(user.profileImg)
                } catch (error) {
-                    console.log(error)
+                    console.error(error)
                     return
                }
           }
