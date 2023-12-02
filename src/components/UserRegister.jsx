@@ -28,6 +28,7 @@ const UserRegister = () => {
 
     try {
       await axios.post("http://localhost:8888/user/register", userData, {
+        withCredentials:true,
         headers: {
           "Content-Type": "multipart/form-data"
         }
